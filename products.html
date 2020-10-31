@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bike| Bike to Work</title>
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+			integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+			crossorigin="anonymous"
+		/>
+		<style>
+			.mapouter {
+				position: relative;
+				text-align: right;
+			}
+			.gmap_canvas {
+				overflow: hidden;
+				background: none !important;
+			}
+			/* .product {
+				padding-left: -15;
+			} */
+		</style>
+	</head>
+	<body>
+		<header class="clearfix">
+			<nav
+				class="navbar navbar-expand-lg navbar-light bg-dark fixed-top float-right"
+			>
+				<a class="navbar-brand text-light" href="#">MR BIKES</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link text-light" href="index.html"
+								>Home <span class="sr-only">(current)</span></a
+							>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle text-light"
+								href="#"
+								id="navbarDropdownMenuLink"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								Products
+							</a>
+							<div
+								class="dropdown-menu"
+								aria-labelledby="navbarDropdownMenuLink"
+							>
+								<a class="dropdown-item" href="products.html#frames">Frames</a>
+								<a class="dropdown-item" href="products.html#parts">Parts</a>
+								<a class="dropdown-item" href="products.html#accessories"
+									>Outfit and Accessories</a
+								>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light" href="bikefitting.html"
+								>Bike Fitting</a
+							>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle text-light"
+								href="#"
+								id="navbarDropdownMenuLink"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								BIKES
+							</a>
+							<div
+								class="dropdown-menu"
+								aria-labelledby="navbarDropdownMenuLink"
+							>
+								<a class="dropdown-item" href="bike.html">Mens</a>
+								<a class="dropdown-item" href="#">Women</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light" href="#">About</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<main class="col-md-12">
+			<article class="clearfix" id="frames">
+				<div class="col-12 mt-5 pt-3 h-100 text-dark">
+					<h3>Frames</h3>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2 border-0"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/frames/2019 Caad12 Frame and Fork.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">019 Caad12 Frame and Fork</h5>
+								<h6 class="card-title text-secondary">Cannondale</h6>
+								<p class="card-text text-secondary">
+									<strong>$4,900</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/frames/cervelo.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">cervelo</h5>
+								<h6 class="card-title text-secondary">cervelo</h6>
+								<p class="card-text text-secondary">
+									<strong>$4,200</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/frames/sworks.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">S-Works</h5>
+								<h6 class="card-title text-secondary">Specialized</h6>
+								<p class="card-text text-secondary">
+									<strong>$3,599</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="/img/Products/frames/trek.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Trek</h5>
+								<h6 class="card-title text-secondary">Trek</h6>
+								<p class="card-text text-secondary">
+									<strong>$4,000</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+			<!-- Part -->
+			<article class="clearfix" id="parts">
+				<div class="col-12 mt-5 pt-3 h-100 text-dark">
+					<h3>Parts</h3>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2 border-0"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/parts/Shimano-XT RT86 Ice Tech Rotor.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">XT RT86 Ice Tech Rotor</h5>
+								<h6 class="card-title text-secondary">Shimano</h6>
+								<h6 class="card-title text-secondary">Disc-brake</h6>
+								<p class="card-text text-secondary">
+									<strong>$100</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/parts/Hope-Pro 4 15x110mm Boost 32H Front Hub.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Pro 4 15x110mm Boost 32H</h5>
+								<h6 class="card-title text-secondary">Hope</h6>
+								<h6 class="card-title text-secondary">Front Hub</h6>
+								<p class="card-text text-secondary">
+									<strong>$100</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/parts/Kind Shock-LEV Integra Dropper Seatpost.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Shock-LEV Integra Dropper</h5>
+								<h6 class="card-title text-secondary">Kind</h6>
+								<h6 class="card-title text-secondary">Seatposte</h6>
+								<p class="card-text text-secondary">
+									<strong>$100</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/parts/Maxxis-Minion DHF WT 29 x 2.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Minion DHF WT 29 x 2</h5>
+								<h6 class="card-title text-secondary">Maxxis</h6>
+								<h6 class="card-title text-secondary">Tires</h6>
+								<p class="card-text text-secondary">
+									<strong>$100</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/parts/SRAM- PC XX1 Eagle Chain.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">PC XX1 Eagle</h5>
+								<h6 class="card-title text-secondary">SRAM</h6>
+								<h6 class="card-title text-secondary">Chain</h6>
+								<p class="card-text text-secondary">
+									<strong>$100</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/parts/SRAM-X01 Eagle XG-1295 12-Speed Cassette 10-50T.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">X01 Eagle XG-1295 12-Speed</h5>
+								<h6 class="card-title text-secondary">SRAM</h6>
+								<h6 class="card-title text-secondary">Cassette</h6>
+								<p class="card-text text-secondary">
+									<strong>$100</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<!-- Accessories -->
+
+			<article class="clearfix" id="accessories">
+				<div class="side-bar-main col-12 mt-5 pt-3 h-100 text-dark">
+					<h3>Accessories</h3>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/Accessories/Cantitoe Road-Shelter Tape - 1ft.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Road-Shelter Tape 1ft</h5>
+								<h6 class="card-title text-secondary">Cantitoe</h6>
+								<h6 class="card-title text-secondary">Shelter Tape</h6>
+								<p class="card-text text-secondary">
+									<strong>$10</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/Accessories/ENVE Composites-M-Series Stock Decal Kit  Gloss Finish.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Composites-M-Series</h5>
+								<h6 class="card-title text-secondary">ENVE</h6>
+								<h6 class="card-title text-secondary">Stock Decal Kit Gloss</h6>
+								<p class="card-text text-secondary">
+									<strong>$130</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/Accessories/OneUp Components-EDC Pump.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Components-EDC</h5>
+								<h6 class="card-title text-secondary">OneUp</h6>
+								<h6 class="card-title text-secondary">Pump</h6>
+								<p class="card-text text-secondary">
+									<strong>$100</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/Accessories/Specialized-Zee Cage II.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Zee Cage</h5>
+								<h6 class="card-title text-secondary">Specialized</h6>
+								<h6 class="card-title text-secondary">Zee Cage II</h6>
+								<p class="card-text text-secondary">
+									<strong>$100</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/parts/SRAM- PC XX1 Eagle Chain.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">PC XX1 Eagle</h5>
+								<h6 class="card-title text-secondary">SRAM</h6>
+								<h6 class="card-title text-secondary">Chain</h6>
+								<p class="card-text text-secondary">
+									<strong>$100</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/parts/SRAM-X01 Eagle XG-1295 12-Speed Cassette 10-50T.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">X01 Eagle XG-1295 12-Speed</h5>
+								<h6 class="card-title text-secondary">SRAM</h6>
+								<h6 class="card-title text-secondary">Cassette</h6>
+								<p class="card-text text-secondary">
+									<strong>$100</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/Accessories/Cantitoe Road-Shelter Tape - 1ft.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Road-Shelter Tape 1ft</h5>
+								<h6 class="card-title text-secondary">Cantitoe</h6>
+								<h6 class="card-title text-secondary">Shelter Tape</h6>
+								<p class="card-text text-secondary">
+									<strong>$10</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/Accessories/ENVE Composites-M-Series Stock Decal Kit  Gloss Finish.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Composites-M-Series</h5>
+								<h6 class="card-title text-secondary">ENVE</h6>
+								<h6 class="card-title text-secondary">Stock Decal Kit Gloss</h6>
+								<p class="card-text text-secondary">
+									<strong>$130</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/Accessories/OneUp Components-EDC Pump.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Components-EDC</h5>
+								<h6 class="card-title text-secondary">OneUp</h6>
+								<h6 class="card-title text-secondary">Pump</h6>
+								<p class="card-text text-secondary">
+									<strong>$100</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/Accessories/Specialized-Zee Cage II.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Zee Cage</h5>
+								<h6 class="card-title text-secondary">Specialized</h6>
+								<h6 class="card-title text-secondary">Zee Cage II</h6>
+								<p class="card-text text-secondary">
+									<strong>$100</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/parts/SRAM- PC XX1 Eagle Chain.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">PC XX1 Eagle</h5>
+								<h6 class="card-title text-secondary">SRAM</h6>
+								<h6 class="card-title text-secondary">Chain</h6>
+								<p class="card-text text-secondary">
+									<strong>$100</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/parts/SRAM-X01 Eagle XG-1295 12-Speed Cassette 10-50T.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">X01 Eagle XG-1295 12-Speed</h5>
+								<h6 class="card-title text-secondary">SRAM</h6>
+								<h6 class="card-title text-secondary">Cassette</h6>
+								<p class="card-text text-secondary">
+									<strong>$100</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/Accessories/Cantitoe Road-Shelter Tape - 1ft.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Road-Shelter Tape 1ft</h5>
+								<h6 class="card-title text-secondary">Cantitoe</h6>
+								<h6 class="card-title text-secondary">Shelter Tape</h6>
+								<p class="card-text text-secondary">
+									<strong>$10</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/Accessories/ENVE Composites-M-Series Stock Decal Kit  Gloss Finish.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Composites-M-Series</h5>
+								<h6 class="card-title text-secondary">ENVE</h6>
+								<h6 class="card-title text-secondary">Stock Decal Kit Gloss</h6>
+								<p class="card-text text-secondary">
+									<strong>$130</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/Accessories/OneUp Components-EDC Pump.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Components-EDC</h5>
+								<h6 class="card-title text-secondary">OneUp</h6>
+								<h6 class="card-title text-secondary">Pump</h6>
+								<p class="card-text text-secondary">
+									<strong>$100</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/Accessories/Specialized-Zee Cage II.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Zee Cage</h5>
+								<h6 class="card-title text-secondary">Specialized</h6>
+								<h6 class="card-title text-secondary">Zee Cage II</h6>
+								<p class="card-text text-secondary">
+									<strong>$100</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/parts/SRAM- PC XX1 Eagle Chain.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">PC XX1 Eagle</h5>
+								<h6 class="card-title text-secondary">SRAM</h6>
+								<h6 class="card-title text-secondary">Chain</h6>
+								<p class="card-text text-secondary">
+									<strong>$100</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="container col-md-6 col-lg-4 col-xl-3 float-left p-md-2 p-sm-0 w-100 mb-2"
+					>
+						<div class="card">
+							<img
+								class="card-img-top"
+								src="img/Products/parts/SRAM-X01 Eagle XG-1295 12-Speed Cassette 10-50T.jpg"
+								alt="Card image cap"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">X01 Eagle XG-1295 12-Speed</h5>
+								<h6 class="card-title text-secondary">SRAM</h6>
+								<h6 class="card-title text-secondary">Cassette</h6>
+								<p class="card-text text-secondary">
+									<strong>$100</strong>
+								</p>
+								<a href="#" class="btn btn-dark col-12">Add to Cart</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</main>
+
+		<!-- Footer -->
+
+		<footer class="container-fluid mt-3 bg-dark clearfix">
+			<!-- INFORMATION -->
+			<div class="card-group text-white col-sm-12">
+				<div class="card border border-0 col-sm-12 bg-dark">
+					<div class="card-body text-left">
+						<iframe
+							id="gmap_canvas"
+							class="col-sm-12 float-r h-100"
+							src="https://maps.google.com/maps?q=quezon%20city&t=&z=11&ie=UTF8&iwloc=&output=embed"
+							frameborder="0"
+							scrolling="no"
+							marginheight="0"
+							marginwidth="0"
+						></iframe>
+					</div>
+				</div>
+				<div class="card border border-0 col-sm-12 bg-dark">
+					<div class="card-body text-left">
+						<div class="row">
+							<div class="col text-left py-2">
+								<svg
+									width="1em"
+									height="1em"
+									viewBox="0 0 16 16"
+									class="bi bi-envelope"
+									fill="currentColor"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"
+									/>
+								</svg>
+								<small> mrbike@bicycle.ph.com</small>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col text-left py-2">
+								<svg
+									width="1em"
+									height="1em"
+									viewBox="0 0 16 16"
+									class="bi bi-shop"
+									fill="currentColor"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"
+									/>
+								</svg>
+								<small> Novaliches, Quezon City, Philippines</small>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col text-left py-2">
+								<svg
+									width="1em"
+									height="1em"
+									viewBox="0 0 16 16"
+									class="bi bi-clock"
+									fill="currentColor"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm8-7A8 8 0 1 1 0 8a8 8 0 0 1 16 0z"
+									/>
+									<path
+										fill-rule="evenodd"
+										d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"
+									/>
+								</svg>
+								<small> Monday to Saturday 8:00 AM to 5:00 PM</small>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col text-left py-2">
+								<svg
+									width="1em"
+									height="1em"
+									viewBox="0 0 16 16"
+									class="bi bi-person-lines-fill"
+									fill="currentColor"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7 1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm2 9a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"
+									/>
+								</svg>
+								<small> 09173254577</small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Mission Vission -->
+
+			<div class="card-group text-white col-sm-12">
+				<div class="card border border-0 col-sm-12 bg-dark">
+					<div class="card-body text-left">
+						<h5 class="card-title">Mission</h5>
+						<p class="card-text">
+							To satisfy our partners and customers with a unique Bike
+							experience offering quality, variety, price and service, based on
+							the attention and commitment of our employees.
+						</p>
+					</div>
+				</div>
+				<div class="card border border-0 col-sm-12 bg-dark">
+					<div class="card-body text-left">
+						<h5 class="card-title">Vission</h5>
+						<p class="card-text">
+							To be an independent, innovative, honest and sustainable
+							cooperative in which customers are able to choose from a wide
+							range of Bikes and related products at reasonable prices. In other
+							words, to be a model company and a reference in the distribution
+							sector.
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
+<script
+	src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+	integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+	crossorigin="anonymous"
+></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+	integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+	crossorigin="anonymous"
+></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+	integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+	crossorigin="anonymous"
+></script>
